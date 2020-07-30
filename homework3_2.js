@@ -72,9 +72,12 @@ document.writeln("Сумма нечетных положительных эле�
 document.writeln("Произведение положительных элементов " + multi + "<br>");
 
 //     Найти наибольший среди элементов массива, остальные обнулить.
+let arrMod = [];
 for (let i = 0; i < arr.length; i++) {
     if ( arr [i] < maxNum) {
-        arr [i] = 0;
+        arrMod [i] = 0;
+    } else {
+        arrMod [i] = maxNum;
     }
 }
-document.writeln( arr.join(" | "));
+document.writeln( arrMod.join(" | "));
